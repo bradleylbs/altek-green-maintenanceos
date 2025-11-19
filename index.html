@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Altek Green Smart Mining</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              display: ['Exo 2', 'sans-serif'],
+            },
+            colors: {
+              alti: {
+                green: '#00A651', // Representative vibrant green
+                dark: '#0F172A', // Deep slate/black
+                chrome: '#E2E8F0', // Light chrome base
+                silver: '#94A3B8', // Darker chrome accent
+              }
+            },
+            backgroundImage: {
+              'chrome-gradient': 'linear-gradient(135deg, #f1f5f9 0%, #cbd5e1 50%, #94a3b8 100%)',
+              'metal-mesh': 'radial-gradient(circle, #334155 1px, transparent 1px)',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      /* Chrome text effect for headers */
+      .text-chrome {
+        background: linear-gradient(to bottom, #64748b 0%, #1e293b 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      /* Leaf-like rounded corners */
+      .leaf-shape {
+        border-radius: 1.5rem 0.25rem 1.5rem 0.25rem;
+      }
+      .leaf-shape-inv {
+        border-radius: 0.25rem 1.5rem 0.25rem 1.5rem;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0",
+    "recharts": "https://aistudiocdn.com/recharts@^3.4.1",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.554.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-slate-50 text-slate-900 antialiased">
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+{
+  "name": "Altek Green MaintenanceOS",
+  "description": "Altek Green is a pioneering company at the forefront of technological innovation, specializing in advanced systems for mining equipment.",
+  "requestFramePermissions": [
+    "camera",
+    "geolocation",
+    "microphone"
+  ]
+}
